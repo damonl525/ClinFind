@@ -154,7 +154,7 @@ ClinFind/
 
 ## 👨‍💻 作者
 
-**Liangjianlin** (damonl525)
+damonl525
 
 ---
 
