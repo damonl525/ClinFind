@@ -1,0 +1,82 @@
+{
+  "app": {
+    "title": "ClinFind - File Content Searcher",
+    "connected": "Connected",
+    "disconnected": "Disconnected"
+  },
+  "search": {
+    "placeholder": "Search files... (e.g. 'report revenue')",
+    "placeholder_global": "Search all files...",
+    "placeholder_scoped": "Search in selected scope...",
+    "precision": "Precision",
+    "precision_options": {
+      "exact": "Exact Match",
+      "high": "High Precision",
+      "medium": "Medium (Recommended)",
+      "loose": "Loose Match",
+      "very_loose": "Very Loose"
+    },
+    "no_results": "No results found",
+    "found_results": "Found {count} results in {time}ms",
+    "scope_title": "Search Scope",
+    "add_scope": "Add Folder",
+    "manage_scope": "Manage Paths",
+    "scope_all": "Current Scope: All Indexed",
+    "scope_count": "Current Scope ({count} folders)",
+    "scope_current": "Current Scope",
+    "folders": "Folders",
+    "files": "Files",
+    "add_folder": "Add Folder",
+    "add_file": "Add File",
+    "no_scopes": "No search scope defined. Please add folders or files."
+  },
+  "preview": {
+    "select_file": "Select a file to preview",
+    "explain": "Explain",
+    "open_file": "Open File",
+    "match_context": "Match Context:",
+    "full_path": "Full Path:",
+    "rank": "Rank:"
+  },
+  "settings": {
+    "title": "Settings",
+    "indexed_folders": "Indexed Folders",
+    "folder_placeholder": "Folder path to index",
+    "start_indexing": "Start Indexing",
+    "indexing_note": "Note: Indexing runs in the background. Large folders may take time.",
+    "ai_config": "AI Configuration",
+    "api_base_url": "API Base URL",
+    "api_key": "API Key",
+    "model_name": "Model Name",
+    "cancel": "Cancel",
+    "save": "Save Settings",
+    "saved": "Settings saved",
+    "language": "Language",
+    "search_algo": "Search & Matching Algorithm",
+    "rebuild_index": "Rebuild Index",
+    "rebuild_desc": "Clear current index and re-scan all configured paths. Try this if search results are inaccurate.",
+    "rebuild_confirm": "Are you sure you want to rebuild the index? This will clear existing data and re-scan, which may take some time.",
+    "rebuild_started": "Index rebuild started in background",
+    "confirm": "Confirm",
+    "system": "System Maintenance",
+    "restart_backend": "Restart Backend Service",
+    "restart_desc": "If search hangs, disconnects, or returns no results, try restarting the service.",
+    "restart_confirm": "Are you sure you want to restart the backend service? This will interrupt current tasks.",
+    "restart_success": "Restart command sent",
+    "debug_info": "System Diagnostics",
+    "show_debug": "Show Debug Info",
+    "debug_desc": "Display database status, index statistics and system information for troubleshooting"
+  },
+  "ai": {
+    "explanation_title": "AI Explanation",
+    "thinking": "Thinking...",
+    "configure_first": "Please configure AI settings first",
+    "error": "Error"
+  },
+  "algo": {
+    "title": "Algorithm Details",
+    "description": "This system uses SQLite FTS5 full-text search engine with Trigram tokenizer.",
+    "rank_desc": "Rank score represents the relevance between query and document. It is based on BM25 algorithm, considering term frequency and document length.",
+    "precision_desc": "Precision controls query expansion (synonyms, fuzzy matching, etc.). Higher precision means stricter matching."
+  }
+}

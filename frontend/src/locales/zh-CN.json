@@ -1,0 +1,82 @@
+{
+  "app": {
+    "title": "ClinFind - 文件内容搜索工具",
+    "connected": "已连接",
+    "disconnected": "未连接"
+  },
+  "search": {
+    "placeholder": "搜索文件... (例如 '营收 报告')",
+    "placeholder_global": "搜索所有文件...",
+    "placeholder_scoped": "在指定范围内搜索...",
+    "precision": "匹配精度",
+    "precision_options": {
+      "exact": "精确匹配",
+      "high": "高精度",
+      "medium": "中等 (推荐)",
+      "loose": "宽松",
+      "very_loose": "非常宽松"
+    },
+    "no_results": "无搜索结果",
+    "found_results": "找到 {count} 个结果，耗时 {time}ms",
+    "scope_title": "搜索范围",
+    "add_scope": "添加文件夹",
+    "manage_scope": "管理路径",
+    "scope_all": "当前搜索范围：全部索引",
+    "scope_count": "当前搜索范围 ({count} 个文件夹)",
+    "scope_current": "当前范围",
+    "folders": "个文件夹",
+    "files": "个文件",
+    "add_folder": "添加文件夹",
+    "add_file": "添加文件",
+    "no_scopes": "暂无搜索范围，请添加文件夹或文件"
+  },
+  "preview": {
+    "select_file": "选择文件预览",
+    "explain": "AI 解释",
+    "open_file": "打开文件",
+    "match_context": "匹配上下文",
+    "full_path": "完整路径",
+    "rank": "匹配得分"
+  },
+  "settings": {
+    "title": "设置",
+    "indexed_folders": "索引文件夹",
+    "folder_placeholder": "选择要索引的文件夹",
+    "start_indexing": "开始索引",
+    "indexing_note": "注意：索引在后台运行。大文件夹可能需要一些时间。",
+    "ai_config": "AI 配置",
+    "api_base_url": "API 基础地址",
+    "api_key": "API 密钥",
+    "model_name": "模型名称",
+    "cancel": "取消",
+    "save": "保存设置",
+    "saved": "设置已保存",
+    "language": "语言",
+    "search_algo": "搜索与匹配算法",
+    "rebuild_index": "重建索引",
+    "rebuild_desc": "清空当前索引并重新扫描所有配置的路径。如果搜索结果不准确，请尝试此操作。",
+    "rebuild_confirm": "确定要重建索引吗？这将清空现有数据并重新扫描，可能需要一些时间。",
+    "rebuild_started": "重建索引已在后台开始",
+    "confirm": "确定",
+    "system": "系统维护",
+    "restart_backend": "重启后台服务",
+    "restart_desc": "如果遇到搜索无结果、连接断开或后台卡死，请尝试重启服务。",
+    "restart_confirm": "确定要重启后台服务吗？这将中断当前的搜索或索引任务。",
+    "restart_success": "后台服务重启指令已发送",
+    "debug_info": "系统诊断",
+    "show_debug": "查看诊断信息",
+    "debug_desc": "显示数据库状态、索引统计和系统信息，用于问题排查"
+  },
+  "ai": {
+    "explanation_title": "AI 代码解释",
+    "thinking": "思考中...",
+    "configure_first": "请先配置 AI 设置",
+    "error": "错误"
+  },
+  "algo": {
+    "title": "算法详情",
+    "description": "本系统使用 SQLite FTS5 全文检索引擎，结合 Trigram (三元组) 分词技术。",
+    "rank_desc": "Rank (得分) 表示搜索词与文档的相关性。分值基于 BM25 算法，考虑了词频和文档长度。分值越高，匹配越精准。",
+    "precision_desc": "精度选项控制查询扩展的程度。'精确匹配'只搜原词；'宽松'模式会包含同义词、拼音和模糊匹配。"
+  }
+}

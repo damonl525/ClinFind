@@ -1,0 +1,71 @@
+{
+  "name": "clinfind",
+  "private": true,
+  "version": "3.0.0",
+  "description": "文件内容搜索工具 - A local file content searcher with AI capabilities",
+  "author": "Liangjianlin",
+  "main": "electron/main.cjs",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"wait-on tcp:5173 && electron .\"",
+    "build": "npm run build:backend && vue-tsc -b && vite build && electron-builder",
+    "preview": "vite preview",
+    "build:backend": "cd ../backend && pyinstaller --onedir --name backend --distpath ../frontend/resources --workpath ./build --specpath ./ main.py"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
+    "axios": "^1.13.2",
+    "element-plus": "^2.13.1",
+    "vue": "^3.4.0",
+    "vue-i18n": "^9.14.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitejs/plugin-vue": "^5.0.0",
+    "@vue/tsconfig": "^0.5.0",
+    "autoprefixer": "^10.4.23",
+    "concurrently": "^8.0.0",
+    "cross-env": "^7.0.0",
+    "electron": "^28.0.0",
+    "electron-builder": "^24.0.0",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^5.0.0",
+    "vue-tsc": "^3.2.2",
+    "wait-on": "^7.0.0"
+  },
+  "build": {
+    "appId": "com.clinfind.app",
+    "productName": "ClinFind",
+    "directories": {
+      "output": "dist_release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "resources/backend",
+        "to": "backend",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "ClinFind"
+    }
+  }
+}
