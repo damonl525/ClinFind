@@ -6,7 +6,7 @@
   <img src="https://img.shields.io/badge/许可证-MIT-orange" alt="License">
 </p>
 
-一个强大的本地文件全文搜索工具，支持 **AI 智能扩展搜索**，适用于 PDF、Word、Excel、PowerPoint 等多种文件格式。专为需要在海量文档中快速定位信息的专业人士设计。
+一个强大的本地文件全文搜索工具，支持 **AI 智能扩展搜索**，适用于 PDF、Word、Excel、PowerPoint 等多种文件格式。专为需要在海量文档中快速定位信息的专业人士设计。Clin代表临床，是本人从事的行业，所以是纯小白用AI搓出来自我方便用的工具。
 
 ---
 
